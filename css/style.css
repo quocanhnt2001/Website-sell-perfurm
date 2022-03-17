@@ -168,6 +168,10 @@ ol {
 	letter-spacing: 4px;
 }
 
+.primary-btn:hover {
+	background: #e53637;
+}
+
 .site-btn {
 	font-size: 14px;
 	color: #ffffff;
