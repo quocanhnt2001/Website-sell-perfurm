@@ -1989,6 +1989,10 @@ ol {
 	font-size: 15px;
 }
 
+.footer__widget ul li a:hover {
+	color: #e53637;
+}
+
 .footer__widget .footer__newslatter p {
 	color: #b7b7b7;
 }
