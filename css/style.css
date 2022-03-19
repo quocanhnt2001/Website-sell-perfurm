@@ -1272,6 +1272,10 @@ ol {
 	color: #111111;
 }
 
+.shop__sidebar__categories ul {
+	height: auto;
+}
+
 .shop__sidebar__brand ul {
 	height: auto;
 }
