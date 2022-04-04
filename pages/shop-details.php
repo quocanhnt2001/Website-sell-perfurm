@@ -403,8 +403,8 @@ include("../common/document_head.html");
     <!-- Related Section End -->
 
     <?php
-    include("./common/document_footer.html");
-    include("common/footer.html");
+    include("../common/document_footer.html");
+    include("../common/footer.html");
     ?>
 </body>
 
