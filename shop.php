@@ -31,7 +31,7 @@ include("./common/document_head.html");
                 <div class="col-lg-3">
                     <div class="shop__sidebar">
                         <div class="shop__sidebar__search">
-                            <form action="#">
+                            <form action="shop.php">
                                 <input type="text" placeholder="Search...">
                                 <button type="submit"><span class="icon_search"></span></button>
                             </form>
@@ -46,8 +46,8 @@ include("./common/document_head.html");
                                         <div class="card-body">
                                             <div class="shop__sidebar__categories">
                                                 <ul class="nice-scroll">
-                                                    <li><a href="#">Men (8)</a></li>
-                                                    <li><a href="#">Women (4)</a></li>
+                                                    <li><a href="shop.php">Men (8)</a></li>
+                                                    <li><a href="shop.php">Women (4)</a></li>
                                                     
                                                 </ul>
                                             </div>
@@ -62,13 +62,13 @@ include("./common/document_head.html");
                                         <div class="card-body">
                                             <div class="shop__sidebar__brand">
                                                 <ul>
-                                                    <li><a href="#">Dior</a></li>
-                                                    <li><a href="#">Chanel</a></li>
-                                                    <li><a href="#">GIO</a></li>
-                                                    <li><a href="#">Gucci</a></li>
-                                                    <li><a href="#">Versace</a></li>
-                                                    <li><a href="#">Dolce and Gabbana</a></li>
-                                                    <li><a href="#">Tom Ford</a></li>
+                                                    <li><a href="shop.php">Dior</a></li>
+                                                    <li><a href="shop.php">Chanel</a></li>
+                                                    <li><a href="shop.php">GIO</a></li>
+                                                    <li><a href="shop.php">Gucci</a></li>
+                                                    <li><a href="shop.php">Versace</a></li>
+                                                    <li><a href="shop.php">Dolce and Gabbana</a></li>
+                                                    <li><a href="shop.php">Tom Ford</a></li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -82,11 +82,11 @@ include("./common/document_head.html");
                                         <div class="card-body">
                                             <div class="shop__sidebar__price">
                                                 <ul>
-                                                    <li><a href="#">1.000.000đ - 1.500.000đ</a></li>
-                                                    <li><a href="#">1.500.000đ - 2.000.000đ</a></li>
-                                                    <li><a href="#">2.500.000đ - 3.000.000đ</a></li>
-                                                    <li><a href="#">3.500.000đ - 4.000.000đ</a></li>
-                                                    <li><a href="#">4.000.000đ+</a></li>
+                                                    <li><a href="shop.php#">1.000.000đ - 1.500.000đ</a></li>
+                                                    <li><a href="shop.php#">1.500.000đ - 2.000.000đ</a></li>
+                                                    <li><a href="shop.php">2.500.000đ - 3.000.000đ</a></li>
+                                                    <li><a href="shop.php">3.500.000đ - 4.000.000đ</a></li>
+                                                    <li><a href="shop.php">4.000.000đ+</a></li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -569,6 +569,7 @@ include("./common/document_head.html");
         </div>
     </section>
     <!-- Shop Section End -->
+    
 
     <?php
     include("./common/document_footer.html");
