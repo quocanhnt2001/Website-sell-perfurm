@@ -1,5 +1,5 @@
 <?php
-include("./common/document_head.html");
+include("../common/document_head.html");
 ?>
 <body>
     <?php

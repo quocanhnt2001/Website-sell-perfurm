@@ -1,9 +1,9 @@
 <?php
-include("./common/document_head.html");
+include("../common/document_head.html");
 ?>
 <body>
     <?php
-    include("./common/header-menu.html");
+    include("../common/header-menu.html");
     ?>
 
     <!-- Breadcrumb Section Begin -->
@@ -91,8 +91,8 @@ include("./common/document_head.html");
     <!-- Blog Section End -->
 
     <?php
-    include("./common/document_footer.html");
-    include("common/footer.html");
+    include("../common/document_footer.html");
+    include("../common/footer.html");
     ?>
 </body>
 

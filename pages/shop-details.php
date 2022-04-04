@@ -1,9 +1,9 @@
 <?php
-include("./common/document_head.html");
+include("../common/document_head.html");
 ?>
 <body>
     <?php
-    include("./common/header-menu.html");
+    include("../common/header-menu.html");
     ?>
 
     <!-- Shop Details Section Begin -->
