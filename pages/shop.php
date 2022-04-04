@@ -46,71 +46,14 @@ include("../common/document_head.html");
                                         <div class="card-body">
                                             <div class="shop__sidebar__categories">
                                                 <ul class="nice-scroll">
-                                                    <li><a href="shop.php">Men (8)</a></li>
-                                                    <li><a href="shop.php">Women (4)</a></li>
+                                                    <li><a href="shop.php">Men</a></li>
+                                                    <li><a href="shop.php">Women</a></li>
                                                     
                                                 </ul>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="card">
-                                    <div class="card-heading">
-                                        <a data-toggle="collapse" data-target="#collapseTwo">Branding</a>
-                                    </div>
-                                    <div id="collapseTwo" class="collapse show" data-parent="#accordionExample">
-                                        <div class="card-body">
-                                            <div class="shop__sidebar__brand">
-                                                <ul>
-                                                    <li><a href="shop.php">Dior</a></li>
-                                                    <li><a href="shop.php">Chanel</a></li>
-                                                    <li><a href="shop.php">GIO</a></li>
-                                                    <li><a href="shop.php">Gucci</a></li>
-                                                    <li><a href="shop.php">Versace</a></li>
-                                                    <li><a href="shop.php">Dolce and Gabbana</a></li>
-                                                    <li><a href="shop.php">Tom Ford</a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card">
-                                    <div class="card-heading">
-                                        <a data-toggle="collapse" data-target="#collapseThree">Filter Price</a>
-                                    </div>
-                                    <div id="collapseThree" class="collapse show" data-parent="#accordionExample">
-                                        <div class="card-body">
-                                            <div class="shop__sidebar__price">
-                                                <ul>
-                                                    <li><a href="shop.php#">1.000.000đ - 1.500.000đ</a></li>
-                                                    <li><a href="shop.php#">1.500.000đ - 2.000.000đ</a></li>
-                                                    <li><a href="shop.php">2.500.000đ - 3.000.000đ</a></li>
-                                                    <li><a href="shop.php">3.500.000đ - 4.000.000đ</a></li>
-                                                    <li><a href="shop.php">4.000.000đ+</a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card">
-                                    <div class="card-heading">
-                                        <a data-toggle="collapse" data-target="#collapseFour">Size</a>
-                                    </div>
-                                    <div id="collapseFour" class="collapse show" data-parent="#accordionExample">
-                                        <div class="card-body">
-                                            <div class="shop__sidebar__size">
-                                                <label for="50ml">50ml
-                                                    <input type="radio" id="xs">
-                                                </label>
-                                                <label for="100ml">100ml
-                                                    <input type="radio" id="sm">
-                                                </label>                                            
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                
                             </div>
                         </div>
                     </div>
@@ -128,48 +71,20 @@ include("../common/document_head.html");
                                     <p>Sort by Price:</p>
                                     <select>
                                         <option value="">Low To High</option>
-                                        <option value="">$0 - $55</option>
-                                        <option value="">$55 - $100</option>
+                                        <option value="">High To Low</option>
                                     </select>
                                 </div>
                             </div>
                         </div>
                     </div>
+
                     <div class="row">
                         <div class="col-lg-4 col-md-6 col-sm-6">
-                            <div class="product__item">
-                                <div class="product__item__pic set-bg" data-setbg="img/product/product-1.png">
-                                    <ul class="product__hover">
-                                        <li><a href="#"><img src="img/icon/heart.png" alt=""></a></li>
-                                        <li><a href="#"><img src="img/icon/compare.png" alt=""> <span>Compare</span></a>
-                                        </li>
-                                        <li><a href="#"><img src="img/icon/search.png" alt=""></a></li>
-                                    </ul>
-                                </div>
-                                <div class="product__item__text">
-                                    <h6>Tom Ford Ombré Leather</h6>
-                                    <a href="#" class="add-cart">+ Add To Cart</a>
-                                    <div class="rating">
-                                        <i class="fa fa-star-o"></i>
-                                        <i class="fa fa-star-o"></i>
-                                        <i class="fa fa-star-o"></i>
-                                        <i class="fa fa-star-o"></i>
-                                        <i class="fa fa-star-o"></i>
-                                    </div>
-                                    <h5>4,350,000đ</h5>
-                                    <div class="product__color__select">
-                                        <label for="pc-4">
-                                            <input type="radio" id="pc-4">
-                                        </label>
-                                        <label class="active black" for="pc-5">
-                                            <input type="radio" id="pc-5">
-                                        </label>
-                                        <label class="grey" for="pc-6">
-                                            <input type="radio" id="pc-6">
-                                        </label>
-                                    </div>
-                                </div>
-                            </div>
+                            <?php
+                            include('../data/getnewproduct.php');
+                            $np = new ProductFeatured();
+                            $np -> ShowProductFeatured();
+                            ?> 
                         </div>
                         <div class="col-lg-4 col-md-6 col-sm-6">
                             <div class="product__item sale">
