@@ -8,7 +8,7 @@ include("../common/document_head.html");
 
     <!-- Map Begin -->
     <div class="map">
-        <iframe src="https://www.google.com/maps/embed?pb=" height="500" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.199656327201!2d106.70124855004616!3d10.79601506174695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317528b6f2598bf5%3A0xaf9f2523827f96e9!2zMTQwIMSQaeG7h24gQmnDqm4gUGjhu6csIFBoxrDhu51uZyAxNywgQsOsbmggVGjhuqFuaCwgVGjDoG5oIHBo4buRIEjhu5MgQ2jDrSBNaW5oLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1649083553377!5m2!1svi!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>creen="" aria-hidden="false" tabindex="0"></iframe>
     </div>
     <!-- Map End -->
 
