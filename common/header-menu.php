@@ -1,4 +1,7 @@
-    <!-- Page Preloder 
+   <?php
+   session_start();
+   ?>
+   <!-- Page Preloder 
     <div id="preloder">
         <div class="loader"></div>
     </div>
@@ -9,23 +12,30 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6 col-md-7">
-                        <div class="header__top__left">
-                            <p>Free shipping, 30-day return or refund guarantee.</p>
+                        <div class="header__top__left">      
+                            <?php 
+                                if(isset($_SESSION['id']) && $_SESSION['id'] != NULL){?>
+                                    <p> Hello, <?php echo $_SESSION['name']; ?>. Welcome to DAD Perfume </p><?php
+                                }else {?>
+                                    <p> You need to Sign In </p> <?php
+                                }
+                            ?>
+
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-5">
                         <div class="header__top__right">
                             <div class="header__top__links">
-                                <a href="./common/login.html">Sign in</a>
-                                <a href="#">FAQs</a>
+                            <?php 
+                                if(isset($_SESSION['id']) && $_SESSION['id'] != NULL){?>
+                                    <a href="../Website-ecommerce/data/logoutprocess.php">Sign out</a><?php
+                                }else {?>
+                                    <a href="./common/login.php">Sign in</a> <?php
+                                }
+                            ?>
+                                
                             </div>
                             <div class="header__top__hover">
-                                <span>Usd <i class="arrow_carrot-down"></i></span>
-                                <ul>
-                                    <li>USD</li>
-                                    <li>EUR</li>
-                                    <li>VND</li>
-                                </ul>
                             </div>
                         </div>
                     </div>
@@ -45,7 +55,6 @@
                             <li class="active"><a href="./index.php">Home</a></li>
                             <li><a href="./pages/shop.php">Shop</a>
                                 <ul class="dropdown">
-                                    <li><a href="./pages/shop-details.php">Shop Details</a></li>
                                     <li><a href="./pages/shopping-cart.php">Shopping Cart</a></li>
                                     <li><a href="./pages/checkout.php">Check Out</a></li>
                                 </ul>

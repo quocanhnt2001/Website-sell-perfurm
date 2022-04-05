@@ -3,7 +3,7 @@ include("./common/document_head.html");
 ?>
 <body>
     <?php
-    include("./common/header-menu.html");
+    include("./common/header-menu.php");
     ?>
     <!-- Hero Section Begin -->
     <section class="hero">

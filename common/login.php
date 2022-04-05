@@ -14,22 +14,24 @@
     <div class="container">
         <div class="logo">DAD PERFUME</div>
         <div class="login-item">
-          <form action="" method="post" class="form form-login">
+          <form action="" method='POST' class="form form-login">
             <div class="form-field">
               <label class="icon_info" for="login-username"><span class="hidden">Username</span></label>
-              <input id="login-username" type="text" class="form-input" placeholder="Username" required>
+              <input name="login-username" type="text" class="form-input" placeholder="Username" required>
             </div>
     
             <div class="form-field">
               <label class="icon_lock" for="login-password"><span class="hidden">Password</span></label>
-              <input id="login-password" type="password" class="form-input" placeholder="Password" required>
+              <input name="login-password" type="password" class="form-input" placeholder="Password" required>
             </div>
     
             <div class="form-field">
-                <input type="submit" value="Log in">
+                <input type="submit" name="login" value="Log in">
             </div>
           </form>
         </div>
+        <?php require '../data/loginprocess.php'?>
+
     </div>
 </body>
 </html>
