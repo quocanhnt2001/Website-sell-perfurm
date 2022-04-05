@@ -16,7 +16,7 @@ include("./common/document_head.html");
                                 <h6>Summer Collection</h6>
                                 <h2>Perfume Collections</h2>
                                 <p>A specialist label creating luxury essentials.Reputable products and 100% genuine guarantee.</p>
-                                <a href="#" class="primary-btn">Shop now <span class="arrow_right"></span></a>
+                                <a href="pages/shop.php" class="primary-btn">Shop now <span class="arrow_right"></span></a>
                                 <div class="hero__social">
                                     <a href="#"><i class="fa fa-facebook"></i></a>
                                     <a href="#"><i class="fa fa-twitter"></i></a>
@@ -36,7 +36,7 @@ include("./common/document_head.html");
                                 <h6>Summer Collection</h6>
                                 <h2>Perfume Collections</h2>
                                 <p>A specialist label creating luxury essentials.Reputable products and 100% genuine guarantee.</p>
-                                <a href="#" class="primary-btn">Shop now <span class="arrow_right"></span></a>
+                                <a href="pages/shop.php" class="primary-btn">Shop now <span class="arrow_right"></span></a>
                                 <div class="hero__social">
                                     <a href="#"><i class="fa fa-facebook"></i></a>
                                     <a href="#"><i class="fa fa-twitter"></i></a>
