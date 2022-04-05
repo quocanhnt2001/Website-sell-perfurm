@@ -1,12 +1,20 @@
 <?php include_once("data.php"); ?>
 <?php
     class GetProduct{
-        public function GetAllProducts(){
-            $sql = "SELECT * FROM products";
-            $db = new Database();
-            $result= $db->select($sql);
-            return $result;
-        }
+            public function GetAllProducts($cat_id){
+                if ($cat_id != 1 ) {
+                $sql = "SELECT * FROM products WHERE cat_id ={$cat_id}";
+                $db = new Database();
+                $result= $db->select($sql);
+                return $result;
+                }
+                else {
+                    $sql = "SELECT * FROM products";
+                    $db = new Database();
+                    $result= $db->select($sql);
+                    return $result;
+                }
+            }
     }
 ?>
 
@@ -14,7 +22,9 @@
     class Products{
         public function ShowProducts(){
             $pd = new GetProduct();
-            $result = $pd->GetAllProducts();
+            $getcat = new ShowCategory();
+            $cat_id = $getcat->GetCategory();
+            $result = $pd->GetAllProducts($cat_id);
             while ($row = mysqli_fetch_array($result)){
                 $product = <<<DELIMITER
                 <div class="col-lg-4 col-md-6 col-sm-6">

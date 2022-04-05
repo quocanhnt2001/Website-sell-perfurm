@@ -1,6 +1,6 @@
 <?php include_once("data.php"); ?>
 <?php
-    class CategoryB{
+    class GetCategory{
         private $cat_list=null;
         public function GetAllCategories(){
           if($this->cat_list == null){
@@ -14,9 +14,9 @@
 ?>
 
 <?php
-    class CategoryP{
+    class ShowCategory{
         public function ShowAllCategories(){
-            $cb = new CategoryB();
+            $cb = new GetCategory();
             $result = $cb->GetAllCategories();
             $count = 1;
             while ($row = mysqli_fetch_array($result)){

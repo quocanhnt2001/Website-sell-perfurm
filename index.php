@@ -63,7 +63,7 @@ include("./common/document_head.html");
                         </div>
                         <div class="banner__item__text">
                             <h2>Male Collections</h2>
-                            <a href="#">Shop now</a>
+                            <a href="pages/shop.php?category=2">Shop now</a>
                         </div>
                     </div>
                 </div>
@@ -75,7 +75,7 @@ include("./common/document_head.html");
                         </div>
                         <div class="banner__item__text">
                             <h2>Female Collections</h2>
-                            <a href="#">Shop now</a>
+                            <a href="pages/shop.php?category=3">Shop now</a>
                         </div>
                     </div>
                 </div>
