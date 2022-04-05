@@ -10,7 +10,7 @@
         $_SESSION["id"] = $row['username'];
         $_SESSION["idname"] = $row['name'];
         } else {
-           echo "<script type='text/javascript'>alert('Invalid Username or Password!');</script>";
+           echo '<script language="javascript">alert("Username or Password Not Exist"); window.location="../common/login.php";</script>';
         }
     }
     if(isset($_SESSION["id"])) {
