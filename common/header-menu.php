@@ -15,7 +15,7 @@
                         <div class="header__top__left">      
                             <?php 
                                 if(isset($_SESSION['id']) && $_SESSION['id'] != NULL){?>
-                                    <p> Hello, <?php echo $_SESSION['name']; ?>. Welcome to DAD Perfume </p><?php
+                                    <p> Hello, <?php echo $_SESSION['idname']; ?>. Welcome to DAD Perfume </p><?php
                                 }else {?>
                                     <p> You need to Sign In </p> <?php
                                 }
@@ -52,7 +52,7 @@
                 <div class="col-lg-6 col-md-6">
                     <nav class="header__menu mobile-menu">
                         <ul>
-                            <li class="active"><a href="./index.php">Home</a></li>
+                            <li><a href="./index.php">Home</a></li>
                             <li><a href="./pages/shop.php">Shop</a>
                                 <ul class="dropdown">
                                     <li><a href="./pages/shopping-cart.php">Shopping Cart</a></li>

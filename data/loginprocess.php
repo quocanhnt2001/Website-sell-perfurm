@@ -8,7 +8,7 @@
         $row  = mysqli_fetch_array($result);
         if(is_array($row)) {
         $_SESSION["id"] = $row['username'];
-        $_SESSION["name"] = $row['name'];
+        $_SESSION["idname"] = $row['name'];
         } else {
            echo "<script type='text/javascript'>alert('Invalid Username or Password!');</script>";
         }

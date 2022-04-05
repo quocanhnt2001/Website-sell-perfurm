@@ -29,9 +29,9 @@
                 <input type="submit" name="login" value="Log in">
             </div>
           </form>
+          <p>Don't have an account? <a href="signup.php">Sign Up</a></p>
         </div>
         <?php require '../data/loginprocess.php'?>
-
     </div>
 </body>
 </html>

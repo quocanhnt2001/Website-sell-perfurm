@@ -114,4 +114,10 @@ html {
    text-align: center;
  }
  
- 
+ a:link, a:visited  {
+    color: #fff; 
+ }
+
+ a:hover, a:active {
+   color: #e53637;
+ }
