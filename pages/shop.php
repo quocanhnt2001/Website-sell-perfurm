@@ -42,8 +42,8 @@ include("../common/document_head.html");
                                                 <ul class="nice-scroll">
                                                 <?php
                                                     include('../data/getcat.php');
-                                                    $cp = new ShowCategory();
-                                                    $cp->ShowAllCategories();
+                                                    $showcat = new ShowCategory();
+                                                    $showcat->ShowAllCategories();
 						                        ?>
                                                 </ul>
                                             </div>
