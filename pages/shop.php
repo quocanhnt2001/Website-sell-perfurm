@@ -74,7 +74,7 @@ include("../common/document_head.html");
                     <div class="row">
                         <div class="col-lg-12">
                             <div class="product__pagination">
-                                <a class="active" href="#">1</a>
+                                <a class="active" href="pages/shop.php">1</a>
                             </div>
                         </div>
                     </div>
