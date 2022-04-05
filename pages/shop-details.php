@@ -48,18 +48,6 @@ include("../common/document_head.html");
                             $pdtext = new ShowProInfo();
                             $pdtext->ShowInfo();
                         ?>
-                            <div class="product__details__option">
-                                <div class="product__details__option__size">
-                                    <span>Size:</span>
-                                    <label for="100ml">100ml
-                                        <input type="radio" id="100ml">
-                                    </label>
-                                    <label class="active" for="50ml">50ml
-                                        <input type="radio" id="50ml">
-                                    </label>
-                                
-                                </div>
-                            </div>
                             <div class="product__details__cart__option">
                                 <div class="quantity">
                                     <div class="pro-qty">
