@@ -1173,6 +1173,10 @@ ol {
 	transition: all, 0.3s;
 }
 
+.shop__sidebar__categories ul li a {
+	font-size: 25px;
+}
+
 .shop__sidebar__categories ul li a:hover,
 .shop__sidebar__price ul li a:hover,
 .shop__sidebar__brand ul li a:hover {
