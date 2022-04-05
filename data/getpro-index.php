@@ -27,7 +27,7 @@
                             </div>
                             <div class="product__item__text">
                                 <h6>{$row['pd_name']}</h6>
-                                <a href="pages/shop-details.php">Go To Details</a>
+                                <a href="pages/shop-details.php?pd_id={$row['pd_id']}">Go To Details</a>
                                 <h5>{$row['pd_price']}₫</h5>
                             </div>
                         </div>
