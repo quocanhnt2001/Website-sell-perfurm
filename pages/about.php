@@ -71,15 +71,6 @@ include("../common/document_head.html");
                         <p>“DAD Perfume will constantly innovate and develop, becoming a close companion 
                             contributing to creating a fresh, sophisticated and noble breeze for all customers.”
                         </p>
-                        <div class="testimonial__author">
-                            <div class="testimonial__author__pic">
-                                <img src="img/about/testimonial-author.jpg" alt="">
-                            </div>
-                            <div class="testimonial__author__text">
-                                <h5>DAD Perfume</h5>
-                               
-                            </div>
-                        </div>
                     </div>
                 </div>
                 <div class="col-lg-6 p-0">
@@ -148,7 +139,7 @@ include("../common/document_head.html");
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-6">
                     <div class="team__item">
-                        <img src="img/about/team-2.jpg" alt="">
+                        <img src="img/about/team-2.png" alt="">
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-6">
