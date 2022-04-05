@@ -3,7 +3,7 @@
 <?php
     class GetProductIndex{
         public function GetProductsIndex(){
-            $sql = "SELECT * FROM products";
+            $sql = "SELECT * FROM products LIMIT 8";
             $db = new Database();
             $result= $db->select($sql);
             return $result;
@@ -18,7 +18,7 @@
             $result = $pdi->GetProductsIndex();
             while ($row = mysqli_fetch_array($result)){
                 $product = <<<DELIMITER
-                    <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix new-arrivals">
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix {$row['filter_name']}">
                         <div class="product__item">
                             <div class="product__item__pic set-bg" data-setbg={$row['pd_img']}>
                                 <ul class="product__hover">
