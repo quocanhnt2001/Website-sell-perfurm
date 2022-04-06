@@ -70,7 +70,17 @@
                         <ul>
                             <li><a href="#" class=""><img src="img/icon/search.png" alt=""></a></li>
                             <li><a href="#"><img src="img/icon/heart.png" alt=""></a></li>
-                            <li><a href="./pages/shopping-cart.php"><img src="img/icon/cart.png" alt=""> <span>0</span></a><div class="price">$0.00</div>
+                            <li><a href="./pages/shopping-cart.php"><img src="img/icon/cart.png" alt=""> 
+                                <?php
+                                    if(isset($_SESSION['cart'])){
+                                        $count = count($_SESSION['cart']);
+                                        echo "<span id=\"cart_count\">$count</span>";
+                                    }else{
+                                        echo "<span id=\"cart_count\">0</span>";
+                                    }
+                                ?>
+                                </a>
+
                             </li>
                         </ul>
                     </div>

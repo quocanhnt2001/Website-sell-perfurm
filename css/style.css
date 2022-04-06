@@ -958,10 +958,19 @@ ol {
 	z-index: -1;
 }
 
-.product__item__pic .product__hover li img {
+.product__item__pic {
 	background: #ffffff;
 	padding: 10px;
 	display: inline-block;
+}
+.product__hover li img {
+	padding: 0px;
+}
+.product__hover li button{
+	width: 36px;
+	height: 38px;
+	border: none;
+	background: #ffffff
 }
 
 .product__item__text {
@@ -2259,6 +2268,10 @@ ol {
 	border-radius: 50%;
 	line-height: 40px;
 	text-align: center;
+}
+.cart__close button {
+	border: none;
+	border-radius: 100%;
 }
 
 .continue__btn.update__btn {

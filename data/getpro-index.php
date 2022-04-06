@@ -20,9 +20,14 @@
                 $product = <<<DELIMITER
                     <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix {$row['filter_name']}">
                         <div class="product__item">
-                            <div class="product__item__pic set-bg" data-setbg={$row['pd_img']}>
+                            <div class="product__item__pic set-bg"> <img src={$row['pd_img']}>
                                 <ul class="product__hover">
-                                    <li><a href="#"><img src="img/icon/heart.png" alt=""></a></li>
+                                    <li>
+                                        <form action="" method="POST">
+                                            <button type="submit" name="addcart"><img src="img/icon/cart.png" alt=""></button>
+                                            <input type="hidden" name="pro_id" value="{$row['pd_id']}">
+                                        </form>
+                                    </li>
                                 </ul>
                             </div>
                             <div class="product__item__text">

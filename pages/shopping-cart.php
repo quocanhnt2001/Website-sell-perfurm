@@ -41,81 +41,29 @@ include("../common/document_head.html");
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr>
-                                    <td class="product__cart__item">
-                                        <div class="product__cart__item__pic">
-                                            <img src="img/shopping-cart/cart-1.png" width="150px" height="150px" alt="">
-                                        </div>
-                                        <div class="product__cart__item__text">
-                                            <h6>Chanel Nam Bleu De Chanel EDP</h6>
-                                            <h5>3.600.000đ</h5>
-                                        </div>
-                                    </td>
-                                    <td class="quantity__item">
-                                        <div class="quantity">
-                                            <div class="pro-qty-2">
-                                                <input type="text" value="1">
-                                            </div>
-                                        </div>
-                                    </td>
-                                    <td class="cart__price">3.600.000đ</td>
-                                    <td class="cart__close"><i class="fa fa-close"></i></td>
-                                </tr>
-                                <tr>
-                                    <td class="product__cart__item">
-                                        <div class="product__cart__item__pic">
-                                            <img src="img/shopping-cart/cart-2.jpg"width="150px" height="150px" alt="">
-                                        </div>
-                                        <div class="product__cart__item__text">
-                                            <h6>Giorgio Armani Acqua Di Gio</h6>
-                                            <h5>3.200.000đ</h5>
-                                        </div>
-                                    </td>
-                                    <td class="quantity__item">
-                                        <div class="quantity">
-                                            <div class="pro-qty-2">
-                                                <input type="text" value="1">
-                                            </div>
-                                        </div>
-                                    </td>
-                                    <td class="cart__price">3.200.000đ</td>
-                                    <td class="cart__close"><i class="fa fa-close"></i></td>
-                                </tr>
-                                <tr>
-                                    <td class="product__cart__item">
-                                        <div class="product__cart__item__pic">
-                                            <img src="img/shopping-cart/cart-3.jpg"width="150px" height="150px" alt="">
-                                        </div>
-                                        <div class="product__cart__item__text">
-                                            <h6>Dior Sauvage Eau De Toilette</h6>
-                                            <h5>3.050.000đ</h5>
-                                        </div>
-                                    </td>
-                                    <td class="quantity__item">
-                                        <div class="quantity">
-                                            <div class="pro-qty-2">
-                                                <input type="text" value="1">
-                                            </div>
-                                        </div>
-                                    </td>
-                                    <td class="cart__price">3.050.000đ</td>
-                                    <td class="cart__close"><i class="fa fa-close"></i></td>
-                                </tr>
-                                <tr>
-                                    
-                                </tr>
+                                    <?php
+                                        include('../data/cart-item.php');
+                                        $newpdcart = new ProductsCart();
+                                        $newpdcart -> ShowProductsCart();
+                                            if(isset($_SESSION['cart'])){
+                                                $amount = $_POST['amount'];
+                                                
+                                            } 
+                                                                                  
+                                        require('../data/removecart.php');
+                                    ?>
                             </tbody>
                         </table>
                     </div>
                     <div class="row">
                         <div class="col-lg-6 col-md-6 col-sm-6">
                             <div class="continue__btn">
-                                <a href="./shop.php">Continue Shopping</a>
+                                <a href="pages/shop.php">Continue Shopping</a>
                             </div>
                         </div>
                         <div class="col-lg-6 col-md-6 col-sm-6">
                             <div class="continue__btn update__btn">
-                                <a href="#"><i class="fa fa-spinner"></i> Update cart</a>
+                                <a href="pages/shopping-cart.php"><i class="fa fa-spinner"></i> Update cart</a>
                             </div>
                         </div>
                     </div>
@@ -131,10 +79,17 @@ include("../common/document_head.html");
                     <div class="cart__total">
                         <h6>Cart total</h6>
                         <ul>
-                            <li>Subtotal <span> 9.850.000đ</span></li>
-                            <li>Total <span> 9.850.000đ</span></li>
+                            <?php
+                            if(isset($_SESSION['cart'])){
+                                echo "<li>Items<span> $count</span></li>";
+                                echo "<li>Subtotal <span> 9.850.000đ</span></li>";
+                                echo "<li>Total <span> 9.850.000đ</span></li>";
+                            }else{
+                                echo "<li>Items<span>0</span></li>";
+                            }
+                            ?>
                         </ul>
-                        <a href="#" class="primary-btn">Proceed to checkout</a>
+                        <a href="pages/checkout.php" class="primary-btn">Proceed to checkout</a>
                     </div>
                 </div>
             </div>

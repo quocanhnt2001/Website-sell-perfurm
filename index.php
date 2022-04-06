@@ -101,6 +101,8 @@ include("./common/document_head.html");
                         include('data/getpro-index.php');
                         $newpdindex = new ProductsIndex();
                         $newpdindex -> ShowProductsIndex();
+                        require('data/addcart.php');
+
                     ?>
             </div>
         </div>

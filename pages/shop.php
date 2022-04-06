@@ -69,6 +69,7 @@ include("../common/document_head.html");
 							include('../data/getpro.php');
 							$newpd = new Products();
 							$newpd->ShowProducts();
+                            require('../data/addcart.php');
 						?>
                     </div>
                     <div class="row">

@@ -1,20 +1,20 @@
 <?php include_once("data.php"); ?>
 <?php
     class GetProduct{
-            public function GetAllProducts($cat_id){
-                if ($cat_id != 1 ) {
-                $sql = "SELECT * FROM products WHERE cat_id ={$cat_id}";
+        public function GetAllProducts($cat_id){
+            if ($cat_id != 1 ) {
+            $sql = "SELECT * FROM products WHERE cat_id ={$cat_id}";
+            $db = new Database();
+            $result= $db->select($sql);
+            return $result;
+            }
+            else {
+                $sql = "SELECT * FROM products";
                 $db = new Database();
                 $result= $db->select($sql);
                 return $result;
-                }
-                else {
-                    $sql = "SELECT * FROM products";
-                    $db = new Database();
-                    $result= $db->select($sql);
-                    return $result;
-                }
             }
+        }
     }
 ?>
 
@@ -31,7 +31,12 @@
                     <div class="product__item">
                         <div class="product__item__pic set-bg"> <img src={$row['pd_img']}>
                             <ul class="product__hover">
-                                <li><a href="#"><img src="img/icon/heart.png" alt=""></a></li>
+                                <li>
+                                    <form action="" method="POST">
+                                        <button type="submit" name="addcart"><img src="img/icon/cart.png" alt=""></button>
+                                        <input type="hidden" name="pro_id" value="{$row['pd_id']}">
+                                    </form>
+                                </li>
                             </ul>
                         </div>
                         <div class="product__item__text">
