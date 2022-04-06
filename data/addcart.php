@@ -20,7 +20,14 @@
                     'product_id' => $_POST['pro_id']
                 );
                 $_SESSION['cart'][$count]= $item_array;
-                print_r($_SESSION['cart']);
+                echo "<script>
+                            window.onload = function() {
+                                if(!window.location.hash) {
+                                    window.location = window.location + '#loaded';
+                                    window.location.reload();
+                                }
+                            }
+                </script> ";
             }
 
         }else{

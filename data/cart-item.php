@@ -40,7 +40,7 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td class="cart__price">3.600.000đ</td>
+                                    <td class="cart__price">{$row['pd_price']} đ</td>
                                     <input type="hidden" name="pd_price" value="{$row['pd_price']}">
                                     <td class="cart__close"><button type="submit" name="remove"><i class="fa fa-close"></i></button></td>
                                 </tr>

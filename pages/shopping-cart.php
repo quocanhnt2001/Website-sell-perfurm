@@ -44,12 +44,7 @@ include("../common/document_head.html");
                                     <?php
                                         include('../data/cart-item.php');
                                         $newpdcart = new ProductsCart();
-                                        $newpdcart -> ShowProductsCart();
-                                            if(isset($_SESSION['cart'])){
-                                                $amount = $_POST['amount'];
-                                                
-                                            } 
-                                                                                  
+                                        $newpdcart -> ShowProductsCart();                               
                                         require('../data/removecart.php');
                                     ?>
                             </tbody>
